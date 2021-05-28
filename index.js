@@ -1,33 +1,51 @@
-const moment = require('moment');
-moment.locale('ru');
-const getDateBirthd=()=>
-{
-return {
-    year: 1996,
-    day:13,
-    hours:11
-    }
-}
-const MyDateBirhd =
-{
-    y:1996,
-    d:13,
-    h:11
-}
-const showdate=moment(MyDateBirhd).format();
-console.log(showdate);
-const many_years_ago= moment(showdate,"YYYYMMDD").fromNow();
+const axios = require('axios');
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=50a7aa80fa492fa92e874d23ad061374';
 
-const calcdate=moment(showdate).format("YYYYMMDD");
+    axios.get(url).then((response=>response.json).then(data => {
+      let tempValue = await data['main']['temp'];
+      let nameValue = await data['name'];
+      let descValue = await data['weather'][0]['description'];
+    console.log(tempValue);
+    console.log(nameValue);
+    console.log(descValue);
+      
+    
+    }).catch(err => alert("Wrong city name!"))
+   
+ /***
+     * var unirest = require("unirest");
 
-//const many_days_ago= moment().startOf('day').fromNow();
-//const many_hours_ago= moment().startOf('hour').fromNow();
-const many_days_ago=moment().diff(moment(calcdate, 'YYYYMMDD'), 'days');
-const many_hours_ago=moment().diff(moment(calcdate, 'YYYYMMDD'), 'hours');
-const day_of_week =moment().subtract(10,'days').calendar();
-console.log('Вы родились'+' '+many_years_ago);
-console.log('С той поры прошло'+'  '+many_days_ago +' дней...');
-console.log('С той поры прошло'+'  '+many_hours_ago+' часов....');
-console.log('Это был день недели'+'  '+moment(calcdate).format('dddd'));
+var req = unirest("GET", "https://community-open-weather-map.p.rapidapi.com/climate/month");
+
+req.query({
+	"q": "San Francisco"
+});
+
+req.headers({
+	"x-rapidapi-key": "SIGN-UP-FOR-KEY",
+	"x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
+	"useQueryString": true
+});
 
 
+req.end(function (res) {
+	if (res.error) throw new Error(res.error);
+
+	console.log(res.body);
+});
+
+     */
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+console.log('Modul head connected!');
