@@ -15,6 +15,7 @@ await axios.get(url).then((response=>response.json).then(data => {
    
 
 }
+run();
     
  /***
      * var unirest = require("unirest");
