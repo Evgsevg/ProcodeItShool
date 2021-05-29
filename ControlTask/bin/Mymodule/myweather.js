@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=50a7aa80fa492fa92e874d23ad061374';
+const url = 'https://api.openweathermap.org/data/2.5/forecast?q=Odessa&cnt=1&lang=ua&units=metrick&appid=50a7aa80fa492fa92e874d23ad061374';
 
 const run = async()=>{
 await axios.get(url).then((response=>response.json).then(data => {
