@@ -1,0 +1,16 @@
+{
+  "name": "hw7nj",
+  "version": "1.0.0",
+  "description": "home work for lection 7stream pipe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./app.js"
+  },
+  "keywords": [
+    "stream",
+    "paipe"
+  ],
+  "author": "Sevgen",
+  "license": "ISC"
+}
