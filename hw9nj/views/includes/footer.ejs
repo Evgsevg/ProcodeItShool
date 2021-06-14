@@ -1,0 +1,32 @@
+<%
+let menu = [
+{
+    title:'Home',
+    url:'/'
+},
+
+{
+    title:'About',
+    url:'/about'
+},
+{
+    title:'Prising',
+    url:'#'
+}
+]
+%>
+<%
+let year =  new  Date().getFullyear()
+%>
+
+
+
+
+<footer>
+    <% menu.foreach(item=>{( %>
+        <li class="nav-item">
+            <a  class="nav-link"href="<%=item.url"<%= item.title %>></a>
+        </li>
+        <% })%>
+        <div class="copyright">&copy<%= year%>All right reserved!</div>
+</footer>
