@@ -1,18 +1,20 @@
 {
-  "name": "bin",
+  "name": "hw4nj",
   "version": "1.0.0",
-  "description": "hwLec1",
+  "description": "asincawait,promis",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./index.js"
+    "start": "node ./app.js"
   },
   "keywords": [
-    "hw1"
+    "hwlection4"
   ],
   "author": "Sevgen",
   "license": "ISC",
   "dependencies": {
-    "moment": "^2.29.1"
+    "axios": "^0.21.1",
+    "jsonapi-parse": "^2.0.1",
+    "unirest": "^0.6.0"
   }
 }
