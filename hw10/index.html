@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileUpload</title>
+</head>
+<body>
+<form action="/single" method="post" enctype="multipart/form-data">
+<input type="file" name="image">
+<button type="submit">upload</button>
+
+</form> 
+<h1>MultiplefileUpload</h1>
+<form action="/multiple" method="post" enctype="multipart/form-data">
+    <input type="file" name="images" multiple>
+    <button type="submit">upload</button>
+</form> 
+<img class="logo" src="/images/Heading.png" alt="My_Logo">
+</body>
+</html>
