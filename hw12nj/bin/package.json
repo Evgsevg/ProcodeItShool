@@ -1,0 +1,23 @@
+{
+  "name": "hw12nj",
+  "version": "1.0.0",
+  "description": "multer,download file on server express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./main.js"
+  },
+  "keywords": [
+    "home",
+    "work",
+    "for",
+    "lection12"
+  ],
+  "author": "Sevgen",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  }
+}

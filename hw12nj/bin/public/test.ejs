@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form enctype='multipart/form-data'>
+        <h1>
+          Upload files
+        </h1>
+        <input type='file' name='photo' @change="filesChange($event.target.name, $event.target.files)">
+  </form>
+  <script>
+    import axios from 'axios'
+    export default {
+      name: 'App',
+      data () {
+        return {
+          serverLink: 'http://localhost:3000/upload/'
+        }
+      },
+      methods: {
+        filesChange (filename, files) {
+          if (!files.length) {
+            return
+          }
+    
+          console.log(filename, files)
+          const formData = new FormData()
+          for (let i = 0; i < files.length; i++) {
+            formData.append(filename, files[i], files[i].name)
+          }
+    
+          axios.post(this.serverLink, formData).then(
+            rsp => {
+              console.log(rsp)
+            }
+          ).catch(err => {
+            console.log(err)
+          })
+        }
+      }
+    }
+    </script>
+</body>
+</html>
