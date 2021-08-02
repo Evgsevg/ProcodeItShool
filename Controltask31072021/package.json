@@ -1,0 +1,21 @@
+{
+  "name": "hw18nj",
+  "version": "1.0.0",
+  "description": "soket.io chat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "soket.io",
+    "chat"
+  ],
+  "author": "Sevgen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.1.3",
+    "soket.io": "^0.0.1-security"
+  }
+}
