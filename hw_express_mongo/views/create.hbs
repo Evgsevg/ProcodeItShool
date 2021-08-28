@@ -1,0 +1,18 @@
+<form action="/create" method="POST">
+  <h2>Create aricle</h2>
+
+  <div class="input-field">
+    <input type="text" name="title">
+     <label>Article title</label>
+    <input type="text" name="author">
+    <label for="author">Author:</label>
+    <input type="text" name="description">
+    <label>Article description</label>
+    <input type="hidden" name="my_id">
+    <input type="hidden" name="date_create">
+  </div>
+<div class="input-article_text_area">
+<textarea name="article" id="" cols="30" rows="10"></textarea>
+</div>
+  <button type="submit" class="btn">Create</button>
+</form>
