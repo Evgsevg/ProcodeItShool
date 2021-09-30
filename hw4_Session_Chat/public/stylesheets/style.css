@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+html {
+  background-color: #D3D3D3;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #D3D3D3;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#messages {
+  height: 300px;
+  font-family: 'Open Sans', sans-serif;
+}
