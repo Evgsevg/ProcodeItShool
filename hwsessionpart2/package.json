@@ -1,0 +1,32 @@
+{
+  "name": "express-socketio-session-example",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "cookie": "^0.4.0",
+    "express": "^4.17.1",
+    "express-session-mongo": "^0.1.0",
+    "jade": "^1.11.0",
+    "socket.io": "^4.2.0"
+  },
+  "description": "HW of using express session in socket.io",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "express",
+    "socket.io",
+    "mongodb",
+    "session"
+  ],
+  "author": "Sevgen",
+  "license": "BSD",
+  "readmeFilename": "",
+  "gitHead": ""
+}
