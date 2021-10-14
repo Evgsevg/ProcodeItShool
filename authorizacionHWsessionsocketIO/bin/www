@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+const webRunner = require('./runners/web');
+const dbRunner = require('./runners/db');
+
+const startBrowser = require('../actions/start_browser');
+const mytest = require('../actions/mytest.js');
+
+const run = async () => {
+console.log('app started!!!');
+   // startBrowser.startbrowser();
+   
+
+   
+   mytest;
+   await dbRunner();
+   await webRunner();
+}
+run();
