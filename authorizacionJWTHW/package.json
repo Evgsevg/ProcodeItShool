@@ -1,0 +1,33 @@
+{
+  "name": "baseapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "ajv": "^8.6.3",
+    "ajv-formats": "^2.1.1",
+    "body-parser": "^1.18.3",
+    "cookie": "^0.4.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "deep-freeze": "^0.0.1",
+    "ejs": "^3.1.6",
+    "express": "~4.16.1",
+    "express-session": "^1.17.2",
+    "express-session-mongo": "^0.1.0",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "jws": "^4.0.0",
+    "mongoose": "^6.0.8",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.3",
+    "nodemon": "^2.0.12",
+    "patch": "^0.0.1",
+    "socket.io": "^4.2.0",
+    "soket.io": "^0.0.1-security",
+    "ws": "^8.0.0"
+  }
+}
